@@ -119,7 +119,7 @@ stress: info: [5833] dispatching hogs: 2 cpu, 0 io, 0 vm, 0 hdd
 [scaling.png](scaling.png)
 
 
-## F. Cleanup Confirmation
+#### Cleanup
 
 ```bash
 $ terraform destroy

@@ -51,7 +51,7 @@ terraform apply -target=aws_ecr_repository.service_a -target=aws_ecr_repository.
 
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 422921064977.dkr.ecr.us-east-1.amazonaws.com
 
-# Tag and push
+# Build and push
 docker build -t 422921064977.dkr.ecr.us-east-1.amazonaws.com/service-a:v1.0.0 .
 docker push 422921064977.dkr.ecr.us-east-1.amazonaws.com/service-a:v1.0.0
 
