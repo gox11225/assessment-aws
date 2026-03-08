@@ -1,9 +1,5 @@
 # Deliverables
 
-### Readme file with architecture file
-
-[README file](README.md)
-
 ### docker-compose.yml file
 
 [docker-compose.yml](terraform/docker-compose.yml)

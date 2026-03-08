@@ -52,11 +52,11 @@ terraform apply -target=aws_ecr_repository.service_a -target=aws_ecr_repository.
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 422921064977.dkr.ecr.us-east-1.amazonaws.com
 
 # Tag and push
-docker tag service-a:v1.0.0 $(terraform output -raw ecr_uri_a):v1.0.0
-docker push $(terraform output -raw ecr_uri_a):v1.0.0
+docker build -t 422921064977.dkr.ecr.us-east-1.amazonaws.com/service-a:v1.0.0 .
+docker push 422921064977.dkr.ecr.us-east-1.amazonaws.com/service-a:v1.0.0
 
-docker tag service-b:v1.0.0 $(terraform output -raw ecr_uri_b):v1.0.0
-docker push $(terraform output -raw ecr_uri_b):v1.0.0
+docker build -t 422921064977.dkr.ecr.us-east-1.amazonaws.com/service-b:v1.0.0 .
+docker push 422921064977.dkr.ecr.us-east-1.amazonaws.com/service-b:v1.0.0
 ```
 
 ### 3. Deploy the rest of the infrastructure
@@ -64,4 +64,5 @@ docker push $(terraform output -raw ecr_uri_b):v1.0.0
 ```bash
 terraform apply
 ```
-[terraform-apply.txt](terraform/terraform-apply.txt)
+
+[output](terraform/terraform-apply.txt)
