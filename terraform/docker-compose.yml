@@ -1,0 +1,12 @@
+services:
+  service-a:
+    image: 422921064977.dkr.ecr.us-east-1.amazonaws.com/service-a:v1.0.0
+    ports:
+      - "8080:5000"
+    restart: unless-stopped
+
+  service-b:
+    image: 422921064977.dkr.ecr.us-east-1.amazonaws.com/service-b:v1.0.0
+    ports:
+      - "8081:5001"
+    restart: unless-stopped
