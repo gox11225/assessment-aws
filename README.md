@@ -41,14 +41,10 @@
 
 ## Deployment Steps
 
-### 1. Configure variables
-
-```bash
- Edit terraform.tfvars with your values
-```
+### 1. Edit terraform.tfvars with your values
 
 ### 2. Create ECR repos and push images
-We need to create ECR repos first to be able to push service images to it 
+We need to create the ECR repositories first so we can push the service images to them.
 ```bash
 terraform init
 terraform apply -target=aws_ecr_repository.service_a -target=aws_ecr_repository.service_b

@@ -1,14 +1,15 @@
 # Deliverables
+Here is the results:
 
-## README.md
+### Readme file with architecture file
 
 [README file](README.md)
 
-## docker-compose.yml
+### docker-compose.yml file
 
 [docker-compose.yml](terraform/docker-compose.yml)
 
-## verify_endpoints.py
+### verify_endpoints.py file
 
 [verify_endpoints.py](verify_endpoints.py)
 
@@ -116,7 +117,7 @@ All checks passed.
 Scale-out was triggered by stressing CPU above the 40% threshold by the `stress` tool:
 
 ```bash
-root@ip-172-31-53-178:~# stress --cpu 2 --timeout 300
+root@ip-172-31-53-178:~# stress --cpu 2 --timeout 1200
 stress: info: [5833] dispatching hogs: 2 cpu, 0 io, 0 vm, 0 hdd
 
 ```
