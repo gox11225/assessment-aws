@@ -1,5 +1,4 @@
 # Deliverables
-Here is the results:
 
 ### Readme file with architecture file
 
@@ -121,9 +120,13 @@ root@ip-172-31-53-178:~# stress --cpu 2 --timeout 1200
 stress: info: [5833] dispatching hogs: 2 cpu, 0 io, 0 vm, 0 hdd
 
 ```
+[scaling.png](scaling.png)
+
 
 ## F. Cleanup Confirmation
 
 ```bash
 $ terraform destroy
+...
+Destroy complete! Resources: 16 destroyed.
 ```
